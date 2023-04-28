@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    position: absolute;
+    padding: 50px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    background-color: black;
+}
+
+
+
+#div-left {
+    position: relative;
+    border-radius:100%;
+    border: 75px solid #ff7300;
+    width: 400px;
+    height: 400px;
+    margin-left: -100px;
+    float: left;
+    opacity: 0;
+    animation: mymove 4s infinite;
+}
+
+#div-right {
+    position: relative;
+    border-radius:100%;
+    border: 75px solid #ff7300;
+    width: 400px;
+    height: 400px;
+    margin-left: -100px;
+    float: right;
+    opacity: 0;
+    animation: mymove-right 4s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        top: 0px;
+        right: 20px;
+        left: 0px;
+        opacity: 0.6;
+    }
+
+    50% {
+        top: 0px;
+        right: 0px;
+        left: 70px;
+        opacity: 3;
+    }
+    100% {
+        top: 0px;
+        right: 0px;
+        left: 0px;
+
+    }
+
+}
+
+@keyframes mymove-right {
+    0% {
+        top: 0px;
+        right: 20px;
+        left: 0px;
+        opacity: 0.6;
+    }
+
+    50% {
+        top: 0px;
+        right: 0px;
+        left: 70px;
+        opacity: 3;
+    }
+    100% {
+        top: 0px;
+        right: 0px;
+        left: 0px;
+
+    }
+
+}
