@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body {
+    background-color: #f4f4f4;
+}
+
 .container {
     max-width: 700px;
     position: absolute;
@@ -122,4 +126,93 @@
 /************** Hover **************/
 .card-background:hover .btn-link-overlay {
     opacity: 1;
+}
+
+/*************** space-racio ****************/
+.card-boxe {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ff7300;
+    height: 400px;
+    gap: .9em;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.items-boxes {
+    background: #f4f4f4;
+    width: 400px;
+    margin: 10px;
+    display: flex;
+}
+
+.items-boxes p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/********** card-boxe-2 ****************/
+.card-boxe-2 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    background-color: aquamarine;
+    gap: .9em;
+    justify-content: center ;
+}
+
+.items-1 {
+    background: #f4f4f4;
+    width: 400px;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+hr {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: #000000;
+    border: 0.3px solid;
+}
+
+.items-1 p {
+    text-align: left;
+}
+
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #000000;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    border-radius: 50%;
+    outline: none;
+    border: 1px;
+    margin: 200px;
+    cursor: pointer;
+    
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 7px;
+    border-radius: 60%;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }
